@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6fb;
+    color: #252b42;
+}
+
+header {
+    background: #253b80;
+    color: white;
+    padding: 30px 8%;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #dce4ff;
+}
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+.form-section,
+.users-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d8dce8;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #3556a8;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background: #3556a8;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.88;
+}
+
+#cancelBtn {
+    background: #777;
+}
+
+.users-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #edf0f5;
+}
+
+th {
+    background: #f3f5fa;
+    color: #4b5675;
+}
+
+.edit-btn {
+    background: #e69b27;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background: #d94343;
+}
+
+#message {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 94%;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 25px 5%;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}

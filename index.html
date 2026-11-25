@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>User Management System</h1>
+        <p>Manage your users easily</p>
+    </header>
+
+    <main class="container">
+
+        <section class="form-section">
+            <h2 id="formTitle">Add New User</h2>
+
+            <form id="userForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+
+                <input type="email" id="email" placeholder="Email Address" required>
+
+                <input type="password" id="password" placeholder="Password" required>
+
+                <input type="number" id="age" placeholder="Age">
+
+                <button type="submit" id="submitBtn">Add User</button>
+                <button type="button" id="cancelBtn" hidden>Cancel Edit</button>
+            </form>
+        </section>
+
+        <section class="users-section">
+            <div class="users-heading">
+                <h2>All Users</h2>
+                <button id="refreshBtn">Refresh</button>
+            </div>
+
+            <p id="message"></p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Age</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="usersTable">
+                        <tr>
+                            <td colspan="4">Loading users...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
